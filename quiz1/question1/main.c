@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int arr[10] = {2, 3, 4, 2, 7, 8, 4, 1, 9, 6}; 
+    int nums[10] = {2, 3, 4, 2, 7, 8, 4, 1, 9, 6}; 
     int i, j, k, size;
 
-    size = sizeof(arr) / sizeof(arr[0]);
-    printf("size of arr: %d\n", size);
+    size = sizeof(nums) / sizeof(nums[0]);
+    printf("size of nums: %d\n", size);
 
     for (i = 0; i < size; i++) {
 
         for (j = i + 1; j < size;) {
 
-            if (arr[i] == arr[j]) {
+            if (nums[i] == nums[j]) {
 
                 for (k = j; k < size - 1; k++) {
 
-                    arr[k] = arr[k + 1];
+                    nums[k] = nums[k + 1];
 
                 }
 
@@ -31,7 +31,7 @@ int main() {
 
     printf("Array elements after deletion of duplicate elements: ");
     for (i = 0; i < size; i++) {
-        printf("%d\t", arr[i]);
+        printf("%d\t", nums[i]);
     }
 
     return 0;
