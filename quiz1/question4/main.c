@@ -1,6 +1,14 @@
+/*
+It's good to include here a comment containing the question you are solving and a description of your proposed solution
+    */
+
 #include <stdio.h>
 #include <stdbool.h>
 
+/*
+Wrong solution
+Can we do the computaion in less time?
+    */
 int main(){
     int nums[5] = {1,1,2,2,3};
     int size_of_nums = sizeof(nums)/sizeof(nums[0]);
