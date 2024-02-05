@@ -1,3 +1,9 @@
+/*
+It's good to include here a comment containing the question you are solving and a description of your proposed solution
+    */
+/*
+    Not sure if this solution rotates
+*/
 #include <stdio.h>
 
 int main() {
