@@ -1,3 +1,11 @@
+/*
+It's good to include here a comment containing the question you are solving and a description of your proposed solution
+    */
+
+/*
+The solution in this file will run in O(n^2) Can we reduce this quadratic time to linear time O(n) ? 
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -7,6 +15,7 @@ int main() {
     size = sizeof(nums) / sizeof(nums[0]);
     printf("size of nums: %d\n", size);
 
+    // Place this part of the code in a different function and make the call to that function from main
     for (i = 0; i < size; i++) {
 
         for (j = i + 1; j < size;) {
