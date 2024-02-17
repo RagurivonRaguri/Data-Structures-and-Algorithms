@@ -1,6 +1,8 @@
 /*
-It's good to include here a comment containing the question you are solving and a description of your proposed solution
-    */
+Question One (1) Remove Duplicates from Sorted Array
+
+Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
+*/
 
 /*
 The solution in this file will run in O(n^2) Can we reduce this quadratic time to linear time O(n) ? 
