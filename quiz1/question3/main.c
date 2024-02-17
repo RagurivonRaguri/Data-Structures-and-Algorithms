@@ -1,41 +1,38 @@
 /*
-It's good to include here a comment containing the question you are solving and a description of your proposed solution
+Question Three (3) - Contains Duplicate
+
+Given an array of integers, find if the array contains any duplicates.
+Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
     */
 
 #include <stdio.h>
 #include <stdbool.h>
 
-/*
-    Duplicates are not only consecutive numbers. Test this code with this array --> [29,2,4,5,29,2,11,15,60,29]
-    */
-int main(){
-    int arr[10]= {0,0,1,2,5,2,3,3,4,6};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    int i, j;
-    bool foundDuplicate ;
-    bool noDuplicate ;
-    for (i = 0; i < size; i++)
-    {
-        for (j = i+1; j < size; j++)
-        {
-            if (arr[i] == arr[j])
-            {
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int arr[] = {29, 2, 4, 5, 29, 2, 11, 15, 60, 29}; 
+    int size = sizeof(arr) / sizeof(arr[0]);
+    bool foundDuplicate = false;
+    bool noDuplicate = true;
+
+    for (int i = 0; i < size; i++) {
+        for (int j = i + 1; j < size; j++) {
+            if (arr[i] == arr[j]) {
                 foundDuplicate = true;
                 break;
-            }else
-            {
-                noDuplicate = false;
-                break;
             }
-                
         }
-        
+        if (foundDuplicate) {
+            break; // If a duplicate is found, no need to continue checking
+        }
     }
-    if (foundDuplicate){
+
+    if (foundDuplicate) {
         printf("Duplicate found!\n");
-    }
-    else if (noDuplicate)
-    {
+    } else {
         printf("No duplicate found!\n");
     }
 
