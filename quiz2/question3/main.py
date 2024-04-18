@@ -1,3 +1,4 @@
+#Write a function that takes the head of a linked list and returns the reversed list.
 def reverseList(head):
     prev = None
     current = head
