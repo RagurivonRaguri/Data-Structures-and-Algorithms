@@ -88,7 +88,6 @@ void editStudent(Student students[], int number_of_students) {
 
                 std::cout << "Enter new course name: ";
                 std::cin >> students[i].course.course_name;
-
                 std::cout << "Student details updated successfully.\n";
                 found = 1;
                 break;
